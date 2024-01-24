@@ -20,6 +20,51 @@ body {
 }
 
 .site-wrapper {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    
+    border-right: 4px solid $accent-primary;
+
+    .circle-decor {
+        height: fit-content;
+        width: fit-content;
+        position: relative;
+        .circle {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            background-color: white;
+        }
+    }
+}
+
+.main-content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 5fr 3fr 2fr 1fr;
+    gap: 10px;
+}
+
+.socials-icons {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    position: absolute;
+    right: 0;
+    margin-right: 0.25rem;
+    gap: 1rem;
+    a, img {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+h1 {
+    @include h1;
+}
+
+.site-wrapper.desktop {
+    display: block;
     margin-right: 2rem;
     margin-top: 2rem;
     border-right: 5px solid $accent-primary;
