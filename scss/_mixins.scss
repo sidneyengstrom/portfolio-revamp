@@ -1,0 +1,12 @@
+@use 'variables' as *;
+
+@mixin h1 {
+    font-size: 5rem;
+    font-family: Kosugi;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.2rem;
+    span {
+        color: $accent-primary;
+    }
+}
