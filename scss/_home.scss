@@ -1,0 +1,31 @@
+@use 'variables' as *;
+
+body {
+	background: linear-gradient(135deg, $primary-dark, $primary-med, $primary-light, $primary-light);
+	background-size: 400% 400%;
+	animation: gradient 50s ease-in-out infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.site-wrapper {
+    margin-right: 2rem;
+    margin-top: 2rem;
+    border-right: 5px solid $accent-primary;
+    border-top: 5px solid $accent-primary;
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
